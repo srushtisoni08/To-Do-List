@@ -8,7 +8,17 @@
     border-radius: 15px;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
-
+.print, .completed {
+    border-radius: 15px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    background: linear-gradient(180deg , white 50%,rgb(151, 233, 255)) ;
+    background-position: bottom;
+    margin: 10px auto;
+    padding: 20px;
+    width: 48%;  /* Ensure both sections are next to each other */
+    color: white;
+    display: inline-block; /* Keep them side-by-side */
+}
 /* Styling the input fields */
 input {
     text-align: center;
@@ -74,33 +84,20 @@ body {
     line-height: 1.6;
     margin: 0;
     padding: 0;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.list{
+    display: flex;
+    justify-content: space-between;   
+    gap: 20px; /* Space between the two sections */
+    margin-top: 30px;
 }
 html, body {
     height: 100%; /* Make sure it spans the full page */
 }
-/* Styling the unordered list */
-ul {
-    font-size: 1.3em;
-    margin: 30px auto;
-    padding: 0;
-    list-style: none;
-    color: rgb(12, 80, 20);
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-}
-
-ul li {
-    padding: 10px 0;
-    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
-}
-
-ul li:last-child {
-    border-bottom: none;
-}
-
-/* Adding a subtle hover effect to list items */
-ul li:hover {
-    color: chocolate;
-    font-weight: bold;
-    transform: scale(1.02);
-    transition: all 0.2s ease;
+ol{
+    color: rgb(0, 87, 127);
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: large;
 }
