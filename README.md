@@ -12,6 +12,7 @@ A simple, user-friendly To-Do List Application to manage tasks efficiently.
 -Tasks and completed tasks are displayed in separate sections for clarity.
 ## Tech Stack
 -Frontend: HTML, CSS, JavaScript
+
 -Styling: Custom CSS for gradient backgrounds and responsive UI.
 
 ## License
