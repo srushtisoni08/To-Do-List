@@ -40,3 +40,34 @@ function addTask() {
         input.value = ''; 
     }
 }
+
+function applyTheme(theme) {
+    const head = document.head;
+    const existingLink = document.getElementById('theme-link');
+
+    if (existingLink) {
+        existingLink.parentNode.removeChild(existingLink); // Remove current theme
+    }
+
+    const newLink = document.createElement('link');
+    newLink.id = 'theme-link';
+    newLink.rel = 'stylesheet';
+
+    // Set the theme file based on the input
+    switch (theme) {
+        case 'dark':
+            newLink.href = 'dark.css';
+            break;
+        case 'doodle':
+            newLink.href = 'doodle.css';
+            break;
+        case 'pop':
+            newLink.href = 'pop.css';
+            break;
+        default:
+            newLink.href = 'style.css'; // Default theme
+            break;
+    }
+
+    head.appendChild(newLink); // Append the new theme to the document
+}
