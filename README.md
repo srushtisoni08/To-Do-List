@@ -8,7 +8,10 @@ A simple, user-friendly To-Do List Application to manage tasks efficiently.
 2.Mark Tasks as Complete
 -Each task can be marked as "Complete," and it will move to the completed tasks section.
 
-3.Organized Interface
+3.Delete Tasks 
+-Users can delete tasks they no longer need, keeping their list clean and organized.
+
+4.Organized Interface
 -Tasks and completed tasks are displayed in separate sections for clarity.
 ## Tech Stack
 Frontend: HTML, CSS, JavaScript
