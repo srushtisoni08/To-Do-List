@@ -1,3 +1,150 @@
-.container{
-    background-color: black;
+* {
+    box-sizing: border-box;
+}
+.container {
+    text-align: center;
+    margin: 50px auto;
+    padding: 20px;
+    max-width: 600px;
+    background-image: url(black.jpg);
+    background-position: center;
+    border-radius: 15px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+.print, .completed {
+    border-radius: 15px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    background: linear-gradient(180deg , white 40%,grey,rgb(0, 0, 0)) ;
+    background-position: bottom;
+    margin: 10px auto;
+    padding: 20px;
+    width: 48%;  /* Ensure both sections are next to each other */
+    color: white;
+    display: inline-block; /* Keep them side-by-side */
+}
+/* Styling the input fields */
+input {
+    text-align: center;
+    height: 45px;
+    width: 100%;
+    max-width: 300px;
+    font-size: 1.2em;
+    font-weight: bold;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    margin: 10px 0;
+    padding: 5px;
+    transition: box-shadow 0.3s ease, border 0.3s ease;
+}
+
+input:focus {
+    outline: none;
+    border-color: rgb(255, 255, 255);
+    box-shadow: 0 0 15px rgb(255, 255, 255);
+}
+
+/* Header styling */
+h1 {
+    font-family:initial;
+    font-size: 2.5em;
+    color: rgb(0, 0, 0);
+    text-shadow: 1px 1px 0px #fdfdfd, 1px 1px 4px rgba(0, 0, 0, 0.2);
+    margin-bottom: 20px;
+}
+
+h2 {
+    text-align: center;
+    color: rgb(0, 0, 0);
+    font-size: 1.8em;
+    margin-bottom: 15px;
+}
+
+/* Button styling */
+button {
+    background-color: rgb(255, 255, 255);
+    color: rgb(0, 0, 0);
+    font-size: 1em;
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    font-style:oblique;
+    padding: 15px 20px;
+    border: none;
+    border-radius: 25px;
+    cursor: pointer;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+button:hover {
+    background-color: rgb(232, 232, 232);
+    transform: scale(1.02);
+    box-shadow: 10px 10px 20px rgba(55, 55, 55, 0.8);
+}
+
+/* Page background styling */
+body {
+    background: linear-gradient(180deg, rgb(0, 0, 0), rgb(105, 105, 105) 60%, rgb(255, 255, 255));;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.list{
+    display: flex;
+    justify-content: space-between;   
+    gap: 20px; /* Space between the two sections */
+    margin-top: 30px;
+}
+html, body {
+    height: 100%; /* Make sure it spans the full page */
+}
+ol{
+    color: rgb(255, 255, 255);
+    text-shadow: 2px 2px 1px black;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: large;
+}
+.dropdown {
+    position: relative;
+    display: inline-block;
+    margin: 1cm 0 0 36cm;
+}
+
+#theme {
+    margin: 0;
+}
+
+.dropdown-list {
+    display: none; /* Initially hidden */
+    position: absolute;
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    background-color: #ffffff;
+    border: 1px solid rgb(255, 255, 255);
+    border-radius: 5px;
+    box-shadow: 0 4px 20px rgb(255, 255, 255);
+    z-index: 1000;
+    width: 150px;
+}
+
+.dropdown-list li {
+    padding: 10px;
+    cursor: pointer;
+    text-align: center;
+    color: rgb(0, 0, 0);
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+.dropdown-list li:hover {
+    background-color: rgb(54, 54, 54);
+    border-radius: 10px;
+    color:rgb(255, 255, 255);
+}
+.dropdown:hover .dropdown-list {
+    display: block;
+    border-radius: 10px;
+    margin: 0 0 0 -22px;
 }
