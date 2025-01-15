@@ -6,20 +6,22 @@
     margin: 50px auto;
     padding: 20px;
     max-width: 600px;
-    background-image: url(istockphoto-1778777768-612x612.jpg);
+    background:linear-gradient( #FF82E2,#70BAFF);
+    background-repeat: no-repeat;
+    background-size: cover;
     background-position: center;
     border-radius: 15px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    box-shadow: 1px 4px 6px #0037B3;
 }
 .print, .completed {
     border-radius: 15px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-    background: linear-gradient(180deg , white 50%,rgb(151, 233, 255)) ;
+    box-shadow: 0 4px 6px #FE0879;
+    background: linear-gradient(90deg, #FF82E2 50% ,#FE0879) ;
     background-position: bottom;
     margin: 10px auto;
     padding: 20px;
     width: 48%;  /* Ensure both sections are next to each other */
-    color: white;
+    color: rgb(0, 0, 0);
     display: inline-block; /* Keep them side-by-side */
 }
 /* Styling the input fields */
@@ -31,41 +33,46 @@ input {
     font-size: 1.2em;
     font-weight: bold;
     font-family: Georgia, 'Times New Roman', Times, serif;
-    border: 1px solid #ccc;
+    border: 1px solid #0037B3;
     border-radius: 10px;
     margin: 10px 0;
     padding: 5px;
     transition: box-shadow 0.3s ease, border 0.3s ease;
+    color: #0037B3;
 }
 
 input:focus {
     outline: none;
-    border-color: rgb(63, 179, 233);
-    box-shadow: 0 0 15px rgba(63, 179, 233, 0.5);
+    border-color: #70BAFF;
+    box-shadow: 0 0 15px #FE0879;
 }
 
 /* Header styling */
 h1 {
     font-family: 'Verdana', Geneva, Tahoma, sans-serif;
+    text-align: center;
+    margin-left: 2cm;
+    border-radius: 5px;
+    width: 10cm;
     font-size: 2.5em;
-    color: rgb(193, 23, 108);
-    text-shadow: 1px 1px 2px #fc87c0, 1px 1px 4px rgba(0, 0, 0, 0.2);
-    margin-bottom: 20px;
+    color: #0037B3;
+    text-shadow: 2px 2px 1px #42a4ff, 2px 2px 4px rgba(0, 0, 0, 0.2);
 }
 
 h2 {
     text-align: center;
-    color: rgb(193, 23, 108);
+    color: #0037B3;
+    text-shadow:3px 1px 3px #70BAFF;
     font-size: 1.8em;
     margin-bottom: 15px;
 }
 
 /* Button styling */
 button {
-    background-color: rgb(193, 23, 108);
+    background-color: #0037B3;
     color: white;
     font-size: 1em;
-    font-style: italic;
+    font-style:unset;
     padding: 15px 20px;
     border: none;
     border-radius: 25px;
@@ -75,14 +82,15 @@ button {
 }
 
 button:hover {
-    background-color: rgb(157, 20, 88);
+    background-color: #70BAFF;
     transform: scale(1.02);
-    box-shadow: 10px 10px 20px rgba(255, 141, 198, 0.8);
+    box-shadow: 10px 10px 20px #0037B3;
+    color: #0037B3;
 }
 
 /* Page background styling */
 body {
-    background: linear-gradient(180deg, rgb(151, 233, 255), pink 60%, rgb(255, 255, 255));;
+    background: url('pop.png');
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     line-height: 1.6;
     margin: 0;
@@ -100,8 +108,8 @@ html, body {
     height: 100%; /* Make sure it spans the full page */
 }
 ol{
-    color: rgb(0, 87, 127);
-    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: #0037B3;
+    font-family:cursive;
     font-size: large;
 }
 .dropdown {
@@ -120,10 +128,9 @@ ol{
     list-style-type: none;
     padding: 0;
     margin: 0;
-    background-color: #ffffff;
-    border: 1px solid rgb(255, 212, 219);
+    background-color: white;
     border-radius: 5px;
-    box-shadow: 0 4px 20px pink;
+    box-shadow: 0 4px 20px #0037B3;
     z-index: 1000;
     width: 150px;
 }
@@ -132,14 +139,13 @@ ol{
     padding: 10px;
     cursor: pointer;
     text-align: center;
-    color: rgb(157, 20, 88);
+    color: #0037B3;
     font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
 
 .dropdown-list li:hover {
-    background-color: rgb(225, 249, 255);
     border-radius: 10px;
-    color:rgb(0, 142, 177);
+    color:#FE0879;
 }
 .dropdown:hover .dropdown-list {
     display: block;

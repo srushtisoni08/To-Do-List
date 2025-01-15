@@ -58,6 +58,7 @@ h2 {
     color: rgb(193, 23, 108);
     font-size: 1.8em;
     margin-bottom: 15px;
+    text-decoration: underline;
 }
 
 /* Button styling */
