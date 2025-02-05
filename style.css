@@ -106,13 +106,14 @@ ol{
     font-size: large;
 }
 .dropdown {
-    position: relative;
+    position: absolute; /* Change to absolute positioning */
+    top: 20px; /* Adjust top position as needed */
+    right: 20px; /* Adjust right position as needed */
     display: inline-block;
-    margin: 1cm 0 0 36cm;
 }
 
-#theme {
-    margin: 0;
+#theme{
+    margin-right: 30px;  
 }
 
 .dropdown-list {
