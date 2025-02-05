@@ -32,6 +32,6 @@ A simple, user-friendly To-Do List Application to manage tasks efficiently. With
 - **Frontend**: HTML, CSS, JavaScript
 - **Styling**: Custom CSS for gradient backgrounds, responsive UI, and theme customization.
 
----
+
 
 
